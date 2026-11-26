@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russia & English Vocabulary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--  Top Navigation Bar  -->
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">🚗 PDD Quiz</a>
+            <a href="vocab.html" class="nav-link active">📚 Russian Word</a>
+        </nav>
+
+        <div class="voice-settings">
+            <div>
+                <label for="ru-voice-select">🇷🇺 Russian Male Voice:</label>
+                <select id="ru-voice-select" class="voice-select"></select>
+            </div>
+            <div>
+                <label for="en-voice-select">🇬🇧 English Male Voice:</label>
+                <select id="en-voice-select" class="voice-select"></select>
+            </div>
+        </div>
+        <button id="toggle-form-btn" class="next-btn" style="display: block; margin-top: 0; margin-bottom: 15px;">
+            ➕ Add New Word / Sentence
+        </button>
+
+        <form id="add-vocab-form" class="vocab-form" style="display: none;">
+            <select id="item-category" class="form-input">
+                <option value="Driving">🚗 Driving & Exam (Слова ПДД)</option>
+                <option value="General">💬 General Ruaaian (Общие фразы)</option>
+            </select>
+
+            <input type="text" id="ru-input" class="form-input" placeholder="Russian word or sentence (required)" required>
+            <input type="text" id="en-input" class="form-input" placeholder="English translation (required)" required>
+            <input type="text" id="ar-input" class="form-input" placeholder="Arab translation (required)" dir="rtl" required>
+
+            <!-- Optional Image Upload -->
+            <label class="file-label">🖼️ Attach Image (Optional):
+                <input type="file" id="img-input" accept="image/*">
+            </label>
+            <!-- Optional Custom Audio Upload -->
+             <label class="file-label">🎙️ Attach Custom Audio (Optional - overrides TTS):
+                <input type="file" id="audio-input" accept="audio/*">
+            </label>
+            <button type="submit" class="save-btn">💾 Save Card</button>
+        </form>
+
+        <!--  Category Filter Tabs  -->
+        <div class="controls">
+            <button class="tool-btn active-filter" data-filter="All">All</button>
+            <button class="tool-btn" data-filter="Driving">🚗 Driving</button>
+            <button class="tool-btn" data-filter="General">💬 General</button>
+        </div>
+        <div class="controls" style="margin-top: 10px; border-top: 1px solid #333; padding-top: 10px;">
+            <button id="export-btn" class="tool-btn">📤 Export Backup (JSON)</button>
+            <button id="import-btn" class="tool-btn">📥 Import Backup (JSON)</button>
+            <input type="file" id="import-file" accept="json" style="display: none;">
+        </div>
+
+        <!-- Vocabulary Cards List -->
+         <div id="vocab-list" class="vocab-list"></div>
+
+    </div>
+    
+    <script src="vocab.js"></script>
+</body>
+</html>

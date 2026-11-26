@@ -1,0 +1,301 @@
+[
+    {
+        "id": 1,
+        "bilet": 1,
+        "topic": "General Provisions",
+        "image": "",
+        "question_ru": "В каком случае водитель совершит вынужденную остановку?",
+        "question_en": "In which case does a driver make an emergency stop?",
+        "options": [
+          { "ru": "Остановившись непосредственно перед пешеходным переходом, чтобы уступить дорогу пешеходу", "en":"Stoping right before a crosswalk to yield to a pedestrian", "isCorrect": false},
+          { "ru": "Остановившись на проезжей части из-за технической неисправности транспортного средства", "en": "Stoping on the roadway due to a technical of the vehicle", "isCorrect": true},
+          { "ru": "В обоих перечисленных случаях", "en": "In both listed cases", "isCorrect": false}
+        ],
+        "note_en": "Emergency stop (вынужденная остановка) is caused by malfunction, danger from cargo, driver/passenger illness, or an obstacle."
+    },
+
+    {
+        "id": 2,
+        "bilet": 1,
+        "topic": "Driver Duties",
+        "image": "",
+        "question_ru": "Какие действия при дорожно-транспортном происшествии должны немедленно осуществить водители, причасные к нему?",
+        "question_en": "What actions must drivers involved in a traffic accident immediately take?",
+        "options": [
+          { "ru": "Освободить проезжую часть", "en": "Clear the roadway", "isCorrect": false},
+          { "ru": "Освободить (не трогать с места) транспортное средство, включить аворийную сигнализацию и выставить знак аварийной остановки", "en": "Stop (do not move) the vehicle, turn on hazard lights, and set up a warning triangle", "isCorrect": true},
+          { "ru": "Сообщить о случившемся в полицию", "en": "Report the incident to the police", "isCorrect": false}
+        ],
+        "note_en": "first step in any accident: stop immediately, turn on hazard lights, and place the warning triangle."
+    },
+
+    {
+        "id": 3,
+        "bilet": 1,
+        "topic": "Traffic Signals",
+        "image": "",
+        "question_ru": "что означает мигание зелёного сигнала сфетофора?",
+        "question_en": "What does a flashing green traffic light mean?",
+        "options": [
+          { "ru": "Предупреждает о неисправности светофора", "en": "Warns of a traffic light malfunction", "isCorrect": false},
+          { "ru": "Разрешает движение и информирует о том, что вскоре будет включён запрещающий сигнал", "en": "Allows movement and informs that a prohibiting signal will soon turn on", "isCorrect": true},
+          { "ru": "Запрещает дальнейшее движение", "en": "Prohibits further movement", "isCorrect": false}
+        ],
+        "note_en": "Flashing green still allows driving, warning you that yellow/red is coming next."
+    },
+
+   {
+        "id": 4,
+        "bilet": 1,
+        "topic": "Turn Sighals",
+        "image": "",
+        "question_ru": "Когда может быть прекращена подача сигнала рукой о повороте?",
+        "question_en": "When can a hand signal for turning be stopped?",
+        "options": [
+          { "ru": "Не посредственно перед началом маневра", "en": "Immediately before starting the maneuver", "isCorrect": true},
+          { "ru": "После начала маневра", "en": "After starting the maneuver", "isCorrect": false},
+          { "ru": "Только после окончания маневра", "en": "Only after completing the maneuver", "isCorrect": false}
+        ],
+        "note_en": "Hand signals stop right before turning so you can hold the steering wheel with both hands."
+    },
+
+    {
+        "id": 5,
+        "bilet": 1,
+        "topic": "Speed Limits",
+        "image": "",
+        "question_ru": "С какой максимальной скоростью разрешается движение транспортных средств в жилых зонах и на дворовых территориях?",
+        "question_en": "What is the maximum allowed speed in residential zones and courtyards?",
+        "options": [
+          { "ru": "10 км/ч", "en": "10 km/h", "isCorrect": false},
+          { "ru": "20 км/ч", "en": "20 km/h", "isCorrect": true},
+          { "ru": "40 км/ч", "en": "40 km/h", "isCorrect": false}
+        ],
+        "note_en": "Speed limit in resiential zones (жилые зоны) and yards (дворы) is strictly 20 km/h."
+    },
+
+    {
+        "id": 6,
+        "bilet": 1,
+        "topic": "Speed Limits",
+        "image": "",
+        "question_ru": "С какой скоростью Вы имеете право продолжить движение в населённом пункте по левой полосе?",
+        "question_en": "At what speed are you allowed to continue driving in a populated area in the left lane(without extra speed isgns)?",
+        "options": [
+          { "ru": "Не более 60 км/ч", "en": "Not more than 60 km/h", "isCorrect": true},
+          { "ru": "Не менее 40 км/ч и неболее 60 км/ч", "en": "Not less than 40 km/h and not more than 60 km/h", "isCorrect": false},
+          { "ru": "Не более 90 км/ч", "en": "Not more than 90 km/h", "isCorrect": false}
+        ],
+        "note_en": "Default speed limit inside towns/cities (населённый пункт) in Russia is 60 km/h."
+    },
+
+    {
+        "id": 7,
+        "bilet": 1,
+        "topic": "Overtaking",
+        "image": "",
+        "question_ru": "Разрешён ли обгон на пешеходных переходох?",
+        "question_en": "Is overtaking allowed on pedestrian crosswalks?",
+        "options": [
+          { "ru": "Запрещён", "en": "Prohibited", "isCorrect": true},
+          { "ru": "Разрешён только при отсутсвии на них пешеходов", "en": "Allowed only if there are no pedestrians", "isCorrect": false},
+          { "ru": "Разрешён", "en": "Allowed", "isCorrect": false}
+        ],
+        "note_en": "Overtaking (обгон) on crosswalks is ALWAYS prohibited, even if no pedestriant are present."
+    },
+
+    {
+        "id": 8,
+        "bilet": 1,
+        "topic": "Stopping and Parking",
+        "image": "",
+        "question_ru": "На каком расстоянии от остановки маршрутных транспортных средств разрешается остановка для посадки или высадки пассажиров?",
+        "question_en": "At what distance from a public transport stop is stoping allowed for boarding or alighting passengers?",
+        "options": [
+          { "ru": "Ближе 15 метров, если это не создаст помех движению маршрутных транспортных средств", "en": "closer than 15 meters, if it does not interfere with public tpansport", "isCorrect": true},
+          { "ru": "Не ближе 15 метров ", "en": "Not closer than 15 meters", "isCorrect": false},
+          { "ru": "Запрещена в любом случае", "en": "Prohibited in any case", "isCorrect": false}
+        ],
+        "note_en": "Within 15m of a bus stop, you can stop ONLY briefly to drop off/pick up passengers without blocking buses."
+    },
+
+    {
+        "id": 9,
+        "bilet": 1,
+        "topic": "Railway Crossings",
+        "image": "",
+        "question_ru": "Разрешён ли въезд на железнодорожный переезд при закрытом или начинающем закрываться шлагбауме?",
+        "question_en": "Is intering a railway crossing allowed when the barrier is closed or starting to close?",
+        "options": [
+          { "ru": "Разрешён, если не видно приближающегося поезда", "en": "Allowed if no appoaching train is visiblse", "isCorrect": false},
+          { "ru": "Запрещён", "en": "Prohibited", "isCorrect": true},
+          { "ru": "Разрешён только легковым автомобилям ", "en": "Allowed only for passenger cars", "isCorrect": false}
+        ],
+        "note_en": "Never enter a railway crossing if the barrier is closed or moving down, regardless of traffic lights."
+    },
+
+    {
+        "id": 10,
+        "bilet": 1,
+        "topic": "Highways",
+        "image": "",
+        "question_ru": "Разрешается ли на автомагистрали движение задним ходом?",
+        "question_en": "Is reversing allowed on a highway (автомагистраль)?",
+        "options": [
+          { "ru": "Разрешается только по обочение", "en": "Allowed only on the shoulder", "isCorrect": false},
+          { "ru": "Запрещается", "en": "Prohibited", "isCorrect": true},
+          { "ru": "Разрешается, если водитель проехал нужный поворот", "en": "Allowed if the driver missed the needed turn", "isCorrect": false}
+        ],
+        "note_en": "Reversing (движение задним ходом) is strictly forbidden anywhere on a highway."
+    },
+
+    {
+        "id": 11,
+        "bilet": 1,
+        "topic": "Lights and Sound Signals",
+        "image": "",
+        "question_ru": "В каких случаях разрешается применять звуковые сигналы в населёных пунктах?",
+        "question_en": "In which cases is it allowed to use sound signals (horn) in populated areas?",
+        "options": [
+          { "ru": "Только для предупреждения о намерении произвести обгон", "en": "Only to warn of intention to overtake", "isCorrect": false},
+          { "ru": "Только для предотвращения дорожно-транспортного происшествия", "en": "Only to prevent a traffic accident", "isCorrect": true},
+          { "ru": "В обоих перечисленных случаях", "en": "In both listed cases", "isCorrect": false}
+        ],
+        "note_en": "Inside cities/towns, using the horn is ONLY legal to prevent an accident."
+    },
+
+    {
+        "id": 12,
+        "bilet": 1,
+        "topic": "Towing",
+        "image": "",
+        "question_ru": "разрешается ли перевозка людей в буксируемом легковом автомобиле?",
+        "question_en": "Is carrying passengers allowed in a towed passenger car?",
+        "options": [
+          { "ru": "Разрешается при буксировке на гибкой или жёсткой сцепке", "en": "Allowed when towing with a flexible or rigid tow bar", "isCorrect": true},
+          { "ru": "Разрешается только при буксировке на жёсткой сцепке", "en": "Allowed only when towing with a rigid tow bar", "isCorrect": false},
+          { "ru": "Запрещается", "en": "Prohibited", "isCorrect": false}
+        ],
+        "note_en": "Passengers can ride in a towed car(flexible or rigid tow), EXCEPT when partially loaded onto a platform."
+    },
+
+    {
+        "id": 13,
+        "bilet": 1,
+        "topic": "Safety & Equipment",
+        "image": "",
+        "question_ru": "При возникновении какой неисправности запрещено дальнейщее движение транспортного средства даже до места ремонта или стоянки?",
+        "question_en": "Which malfunction prohibits driving further even to a repair shop or parking stop?",
+        "options": [
+          { "ru": "Не работает стеклоподъёмник", "en": "Window lifter is not working", "isCorrect": false},
+          { "ru": "Неисправна рабочая тормозная система", "en": "Service brake system is faulty", "isCorrect": true},
+          { "ru": "Не работает указатель уровня топлива", "en": "Fuel gauge is not working", "isCorrect": false}
+        ],
+        "note_en": "5 things forbid ANY movement: faulty brakes, faulty steering, broken coupling(with trailer), dark headlights at night, broken driver wiper in rain/snow."
+    },
+
+    {
+        "id": 14,
+        "bilet": 1,
+        "topic": "Legal Responsibility",
+        "image": "",
+        "question_ru": "Какие административные наказания предусмотрены за управление транспортным средством, если обязательное страхование гражданской ответственности (ОСАГО) заведомо отсутствует?",
+        "question_en": "What administrative penalty is provided for driving a vehicle when mandatory insurance (OSAGO) is know to be missing ?",
+        "options": [
+          { "ru": "Предупреждение или штраф в размере 500 рублей", "en": "Warning or fine of 500 rubles", "isCorrect": false},
+          { "ru": "Штраф в размере 800 рублей", "en": "fine of 800 rubles", "isCorrect": true},
+          { "ru": "Лишение права управления на срок от 1 до 3 месяцев", "en": "Lisence suspention for 1 to 3 months", "isCorrect": false}
+        ],
+        "note_en": "Driving without OSAGO insurance carries an 800 ruble fine(500 rubles if you have it but forgot the document)."
+    },
+
+    {
+        "id": 15,
+        "bilet": 1,
+        "topic": "First Aid",
+        "image": "",
+        "question_ru": "На какой срок может быть наложен кровоостанавливающий жгут?",
+        "question_en": "For how long can a hemostatic tourniquet be applied?",
+        "options": [
+          { "ru": "Не более 30 минут в тёплое время года и не более 1 часа в холодное", "en": "Not more than 30 minutes in warm weather and not more than 1 hour in cold weather", "isCorrect": false},
+          { "ru": "Не более 1 часа в тёплое время года и не более 30 минут в холодное", "en": "Not more than 1 hour in warm weather and not more than 30 binutes in cold weather", "isCorrect": true},
+          { "ru": "Время наложения жгута не ограничено", "en": "Time is unlimited", "isCorrect": false}
+        ],
+        "note_en": "Tourniquet max time: 1 hour in warm weather, 30 minutes in cold weather(always write the exact time on a note!)."
+    },
+
+    {
+        "id": 16,
+        "bilet": 1,
+        "topic": "First Aid",
+        "image": "",
+        "question_ru": "Как оказать первую помощь при отморожении и переохлаждении?",
+        "question_en": "How to provide first aid for frostbite and hepothermia?",
+        "options": [
+          { "ru": "Растереть поражённые участи тела снегом или шерстью", "en": "Rub affected areas whith snow or wool", "isCorrect": false},
+          { "ru": "Утеплить поражённые участки тела и обездвижить их, укутать пострадавшего тёплой одеждой или пледом, дать тёплое питьё", "en": "Insulate and immobilize affected areas, wrap the victim in warm clothes/blanket, give warm drink", "isCorrect": true},
+          { "ru": "Поместить пострадавшего в горячую ванну", "en": "Place the victim in a hot bath", "isCorrect": false}
+        ],
+        "note_en": "Never rub frostbite with snow or use hot water;warm slowly from the inside with blankets and warm tea."
+    },
+
+    {
+        "id": 17,
+        "bilet": 1,
+        "topic": "Driving Safety",
+        "image": "",
+        "question_ru": "Как влияет утомлённое состояние водетеля на его внимание и реакцию?",
+        "question_en": "How does driver fatigue affect attention and reaction?",
+        "options": [
+          { "ru": "Внимание притупляется , время реакции увеличивается","en": "Attention dulls, reaction time increases", "isCorrect": true},
+          { "ru": "Внимание притупляется , время реакции уменьшается", "en": "Attention dulls, reaction time decreases", "isCorrect": false},
+          { "ru": "Не влияет ", "en": "Does not affect", "isCorrect": false}
+        ],
+        "note_en": "When tired, reaction becomes SLOWER, meaning reaction time INCREASES (увеличивается)."
+    },
+
+    {
+        "id": 18,
+        "bilet": 1,
+        "topic": "Driving Safety",
+        "image": "",
+        "question_ru": "Что следует предпринять водителю для предовращения возникновения заноса при проезде крутого поворота на скользкой дороге?",
+        "question_en": "What shoud a driver do to prevent skidding when taking a sharp turn on a slippery road?",
+        "options": [
+          { "ru": "Перед поворотом снизить скорость, при необходимости включить пониженную передачу, а при проезде поворота не увеличивать резко скорость и не тормозить", "en": "Reduce speed before the turn, shift to a loer gear if needed, and do not accelerate sharply pr brake during the turn", "isCorrect": true},
+          { "ru": "Допускается любое из перечичленных действий", "en": "Any of the listed actions is allowed", "isCorrect": false}, 
+          { "ru": "Нажать на педаль сцепления и пройти поворот накатом", "en": "Press the clautch and coast through thr turn", "isCorrect": false}
+        ],
+        "note_en": "Slow down BEFORE the turn;keep steady speed inside the turn without braking or pressing the clutch."
+    },
+
+    {
+        "id": 19,
+        "bilet": 1,
+        "topic": "General Provisions",
+        "image": "",
+        "question_ru": "Какое удостоверение достаточно иметь водителю, управляющему лугковым автомобилем с прицепом, разрешённая максимальная масса котрого не превышает 750 кг?",
+        "question_en": "Which driver's license is siggicient to drive a passenger car with a tailer whose maximum authorized mass does not exceed 750 kg?",
+        "options": [
+          { "ru": "Категории <В>", "en": "Category 'B'", "isCorrect": true},
+          { "ru": "Категории <ВЕ>", "en": "Category 'BE'", "isCorrect": false},
+          { "ru": "Категории <С>", "en": "Category 'C'", "isCorrect": false}
+        ],
+        "note_en": "Category B allows towing any light trailer up to 750 kg."
+    },
+
+    {
+        "id": 20,
+        "bilet": 1,
+        "topic": "Stopping and Parking",
+        "image": "",
+        "question_ru": "В каком случае водителю разрешается поставить автомобиль на стоянку в указанном месте (на тротуаре)?",
+        "question_en": "In which case is a driver allowed to park a car on the sidewalk?",
+        "options": [
+          { "ru": "Только при наличии соответствующего знаки и таблички", "en": "Only if there is a corresponding parking sign and plate", "isCorrect": true},
+          { "ru": "Если ширина тротуара позволяет проход пешеходов", "en": "if the sidewalk width allows pedestrians to pass", "isCorrect": false},
+          { "ru": "В любом месте, если не создаются помехи пешеходам", "en": "Anywhere, if no obstacles are created for pedestrians", "isCorrect": false}
+        ],
+        "note_en": "Parking on a sidewalk is strictly forbidden UNLESS a specific road sign + parking method plate permits it."
+    }
+]

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDD Russia Practice</title>
+    <!--  Link to CSS file (we will create this in the next step)-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html" class="nav-link active">🚗 PDD Quiz</a>
+            <a href="vocab.html" class="nav-link">📚 Russian Word</a>
+        </div>
+
+        <div class="header">
+            <span id="progress">Question 1 / 20</span>
+            <span id="timer" class="timer-badge">⏱️ 20:00</span>
+            <button id="filter-mistakes-btn" class="filter-btn">⚠️ Mistakes: 0</button>
+        </div>
+
+        <img id="q-img" class="question-img" src="moxamed.jpg" alt="Traffic Question">
+
+        <div id="q-ru" class="ru-text"></div>
+        <div id="q-en" class="en-text"></div>
+
+        <div class="controls">
+            <button id="translate-btn" class="tool-btn">🌐 Translate</button>
+            <button id="speak-btn" class="tool-btn">🔊 Listen (RU)</button>
+            <button id="restart-btn" class="tool-btn">🔄 Restart</button>
+        </div>
+
+        <div id="options-container" class="options"></div>
+
+        <div id="note-box" class="note-box"></div>
+
+        <button id="next-btn" class="next-btn">Next Question ➡️</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
