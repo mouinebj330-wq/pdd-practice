@@ -233,5 +233,100 @@ importFileEl.onchange = (e) => {
     reader.readAsText(file);
 };
 
+// 9. Flashcard Quiz Mode Logic
+let quizQueue = [];
+let isQuizMode = false;
+
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const FlashcardArea = document.getElementById('flashcard-area');
+const fcProgrees = document.getElementById('fc-progress');
+const fcImg = document.getElementById('fc-img');
+const fcRu = document.getElementById('fc-ru');
+const fcEn = document.getElementById('fc-en');
+const fcAr = document.getElementById('fc-ar');
+const fcAnswer = document.getElementById('fc-answer');
+const fcRevealBtn = document.getElementById('fc-reveal-btn');
+
+// Toggle Quiz Mode On/Off
+startQuizBtn.onclick = () => {
+    isQuizMode = !isQuizMode;
+
+    if (isQuizMode) {
+        // Filter by active category tab and shuffle
+        const sourceList = currentFilter === "All"
+          ? vocabItems
+          : vocabItems.filter(item => item.category === currentFilter);
+
+        quizQueue = [...sourceList].sort(() => Math.random() - 0.5);
+        startQuizBtn.innerText = "❌ Exit Quiz Mode";
+        startQuizBtn.style.backgroundColor = "#ef4444";
+        vocabListEl.style.display = 'none';
+        FlashcardArea.style.display = 'block';
+        showNextFlashcard();
+    } else {
+        startQuizBtn.innerText = "🧠 Start Flashcard Quiz (Test Yourself)";
+        startQuizBtn.style.backgroundColor = "#8b5cf6";
+        FlashcardArea.style.display = "none";
+        vocabListEl.style.display = "flex";
+    }
+};
+
+function showNextFlashcard() {
+    if (quizQueue.length === 0) {
+        fcProgress.innerText = "Completed!"
+        fcRu.innerText = "🎉 Awesome! You reviewed all cards in this set.";
+        fcImg.style.display = "none";
+        fcAnswer.style.display = "none";
+        fcRevealBtn.style.display = "none";
+        document.getElementById('fc-speak-ru').style.display = "none";
+        return;
+    }
+
+    const currentCard =quizQueue[0];
+    fcProgrees.innerText = `Cards remaining: ${quizQueue.length}`;
+    fcRu.innerText = currentCard.ru;
+    fcEn.innerText = currentCard.en;
+    fcAr.innerText = currentCard.ar;
+
+    if (currentCard.image) {
+        fcImg.src = currentCard.image;
+        fcImg.style.display = "block";
+    } else {
+        fcImg.style.display = "none";
+    }
+    // Hide answer initially
+    fcAnswer.style.display = "none";
+    fcRevealBtn.style.display = "block";
+    document.getElementById('fc-speak-ru').style.display = "inline-block";
+}
+
+// Reveal translation 
+fcRevealBtn.onclick = () => {
+    fcRevealBtn.style.display = "none";
+    fcAnswer.style.display = "block";
+};
+
+// Audio buttons inside Flashcard
+document.getElementById('fc-speak-ru').onclick = () => {
+    if (quizQueue.length > 0) speakText(quizQueue[0].ru, 'ru', quizQueue[0].customAudio);
+};
+
+document.getElementById('fc-speak-en').onclick = () => {
+    if (quizQueue.length > 0) speakText(quizQueue[0].en, 'en');
+};
+
+// "I Know It" -> Remove Card from current session
+document.getElementById('fc-knew-btn').onclick = () => {
+    quizQueue.shift();
+    showNextFlashcard();
+};
+
+// "Review Again" -> Move card to the end of the quene
+document.getElementById('fc-again-btn').onclick = () => {
+    const missedCard =quizQueue.shift();
+    quizQueue.push(missedCard);
+    showNextFlashcard();
+};
+
 // Initial Render
 renderVocab();

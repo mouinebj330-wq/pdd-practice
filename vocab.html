@@ -58,7 +58,34 @@
         <div class="controls" style="margin-top: 10px; border-top: 1px solid #333; padding-top: 10px;">
             <button id="export-btn" class="tool-btn">📤 Export Backup (JSON)</button>
             <button id="import-btn" class="tool-btn">📥 Import Backup (JSON)</button>
-            <input type="file" id="import-file" accept="json" style="display: none;">
+            <input type="file" id="import-file" accept=".json" style="display: none;">
+        </div>
+        <!--  Toggle Flashcard Quiz Mode-->
+        <div style="margin-top: 15px;">
+            <button id="start-quiz-btn" class="next-btn" style="display: block; margin-top: 0; background-color: #8b5cf6;">
+                🧠 Start Flashcard Quiz (Test Yourself)
+            </button>
+        </div>
+        <!--  Flashcard quiz container (Hidden by default) -->
+        <div id="flashcard-area" class="vocab-card" style="display: none; border: 2px solid #8b5cf6; text-align: center;">
+            <div id="fc-progress" style="font-size: 13px; color: #a0a0a0; margin-bottom: 10px;">Remaining: 0</div>
+            <img id="fc-img" src="" alt="" style="display: none; margin: 0 auto 12px auto;">
+            <div id="fc-ru" class="vocab-ru" style="font-size: 22px; margin-bottom: 12px;"></div>
+
+            <button id="fc-speak-ru" class="tool-btn" style="margin-bottom: 15px;">🔊 Listen (RU)</button>
+            <!-- Hidden Translation Area -->
+            <div id="fc-answer" style="display: none; border-top: 1px solid #333; padding-top: 12px; margin-top: 10px;">
+                <div id="fc-en" class="vocab-en" style="font-size: 17px;"></div>
+                <div id="fc-ar" class="vocab-ar" style="text-align: center; font-size: 17px;"></div>
+                <button id="fc-speak-en" class="tool-btn" style="margin-bottom: 15px;">🔊 Listen (EN)</button>
+
+                <div style="display: flex; gap: 10px; justify-content: center;">
+                    <button id="fc-again-btn" class="tool-btn" style="border-color: #b70707; color: #fca5a5;">🔁 Review Again</button>
+                    <button id="fc-knew-btn" class="tool-btn" style="border-color: #06c25b; color: #86efac;">✅ I know It</button>
+                </div>
+            </div>
+
+            <button id="fc-reveal-btn" class="next-btn" style="display: block; margin-top: 10px;">👁️ Show Translation</button>
         </div>
 
         <!-- Vocabulary Cards List -->
