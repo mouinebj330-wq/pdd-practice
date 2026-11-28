@@ -317,3 +317,53 @@ background-color: #2563eb;
     background-color: var(--accent-blue);
     border-color: var(--accent-blue);
 }
+
+/*  Mobile & Reponsive Enhancements */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 16px 14px;
+        border-radius: 10px;
+    }
+
+    .header {
+        font-size: 13px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .ru-text, .vocab-ru {
+        font-size: 17px;
+    }
+    
+    /* Arrange helper & filter buttons in clean 2-column grids on mobile */
+    .controls {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    /* Make the first filter button ("All") span full width if 3 items */
+    .controls .tool-btn:first-child:nth-last-child(3) {
+        grid-column: span 2;
+    }
+    .tool-btn {
+        padding: 10px 8px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .card-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        gap: 8px;
+    }
+    .delete-btn {
+        margin-left: 0;
+        padding: 8px 12px;
+    }
+}
